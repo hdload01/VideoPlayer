@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CPVideoPlayerViewController.h"
+
+
+
 @interface CPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) CPVideoPlayerViewController *videoPlayerViewController;
 
 @end
