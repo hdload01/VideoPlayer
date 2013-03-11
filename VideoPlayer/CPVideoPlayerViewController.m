@@ -42,6 +42,8 @@
     MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL:url];
     player.view.frame = self.view.bounds;
     [self.view addSubview:player.view];
+    player.repeatMode = MPMovieRepeatModeOne;
+    
     self.player = player;
     [player release];
     
